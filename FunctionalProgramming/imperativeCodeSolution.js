@@ -3,7 +3,7 @@ const Window = function(tabs) {
   this.tabs = tabs; // We keep a record of the array inside the object
 };
 
-//When you join two windows int oone window
+//When you join two windows into one window
 Window.prototype.join = function(otherWindow) {
   this.tabs - this.tabs.concat(otherWindow.tabs);
   return this;
@@ -15,7 +15,7 @@ Window.prototype.tabOpen = function(tab) {
   return this;
 };
 
-//When yo uclose a tab
+//When you close a tab
 
 Window.prototype.tabClose = function(index) {
 
